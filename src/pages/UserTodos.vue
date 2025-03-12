@@ -3,9 +3,9 @@ import { useUsersStore } from "@/stores/usersStore.js"
 import router from "@/router/index.js"
 import AppBaseButton from "@/components/components-ui/AppBaseButton.vue"
 import UserTodoRow from "@/components/components-logic/UserTodoRow.vue"
-import AppBaseInput from "@/components/components-ui/AppBaseInput.vue";
-import AppBaseSelect from "@/components/components-ui/AppBaseSelect.vue";
-import FiltersPanel from "@/components/components-logic/FiltersPanel.vue";
+import AppBaseInput from "@/components/components-ui/AppBaseInput.vue"
+import AppBaseSelect from "@/components/components-ui/AppBaseSelect.vue"
+import FiltersPanel from "@/components/components-logic/FiltersPanel.vue"
 
 const usersStore = useUsersStore()
 const user = computed(() => usersStore.users.find((user) => user.id.toString() === localStorage.getItem('userId')))

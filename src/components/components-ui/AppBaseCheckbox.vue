@@ -12,7 +12,7 @@ const emit = defineEmits(['update:value'])
     <input
       type="checkbox"
       :checked="props.value"
-      @change="(event) => $emit('update:value', event.target.checked)"
+      @change="(event) => emit('update:value', event.target.checked)"
       class="peer hidden"
     />
     <span class="w-6 h-6 border-2 border-gray-400 rounded flex items-center justify-center">

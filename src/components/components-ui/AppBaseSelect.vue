@@ -29,7 +29,6 @@ watch(() => selected.value, (value) => {
 <template>
   <VueSelect
     v-model="selected"
-    :clearable="false"
     :options="props.options"
     :placeholder="props.placeholder"
   />

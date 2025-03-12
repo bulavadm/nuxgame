@@ -29,7 +29,7 @@ const emit = defineEmits(['updateFavorite'])
     <div class="w-[30%] border p-2">
       <AppBaseCheckbox
         :value="props.isFavorite"
-        @update:value="(value) => $emit('updateFavorite', props.id, value)"/>
+        @update:value="(value) => emit('updateFavorite', props.id, value)"/>
     </div>
   </div>
 </template>
